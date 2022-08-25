@@ -1,4 +1,5 @@
+/* eslint-disable */
 import dayjs from 'dayjs';
-export function format(time, f = 'YYYY-MM-DD') {
-  return dayjs(time).format(f) + 'hello';
-}
+import request from './request';
+export const format = (time, f = 'YYYY-MM-DD') => dayjs(time).format(f) + 'hello11';
+export const http = (options) => request(options);
