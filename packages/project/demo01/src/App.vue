@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <el-button type="primary" disabled>主要按钮</el-button>
     <myhello msg="Welcome to Your Vue.js App" />
     <mybutton></mybutton>
   </div>
@@ -10,8 +11,8 @@
 // import HelloWorld from './components/HelloWorld.vue';
 import { format, http } from '@packages/utils';
 import { getData } from '@packages/core/service/index.service';
-import { myhello } from '@packages/components/copo/hello';
-import { mybutton } from '@packages/components/copo/button';
+import { myhello } from '@packages/components/hello';
+import { mybutton } from '@packages/components/button';
 
 export default {
   name: 'App',
