@@ -16,6 +16,7 @@ packages:
 
 6、在每个子项目文件夹中初始化package.json,并修改配置
 
+```
 {
   "name": "@packages/components",
   "version": "1.0.0",
@@ -36,8 +37,10 @@ packages:
   }
 }
 
+```
 这个时候的目录差不多这样
 
+```
 monorepo
 ├── package.json
 ├── packages
@@ -55,6 +58,7 @@ monorepo
 │   │   │   └── package.json
 └── pnpm-workspace.yaml
 
+```
 7、依次安装依赖 
 
 a、cd 到目标目录 pnpm i
